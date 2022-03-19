@@ -5,7 +5,7 @@ import Team from "./pages/Team";
 import Events from "./pages/Events";
 import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
