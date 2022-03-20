@@ -1,6 +1,6 @@
 const Team = () => {
     return (
-        <div id='team' className='h-screen bg-[yellow]'>
+        <div className='h-screen px-24 bg-gradient-to-br from-[white] to-[#7FC41C]'>
 
         </div>
     );

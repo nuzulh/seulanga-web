@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <div id='about' className='h-screen bg-[blue]'>
+        <div className='h-screen px-24 bg-gradient-to-br from-[white] to-[#7FC41C]'>
 
         </div>
     );

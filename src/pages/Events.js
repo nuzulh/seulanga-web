@@ -1,6 +1,6 @@
 const Events = () => {
     return (
-        <div id='events' className='h-screen bg-[brown]'>
+        <div className='h-screen px-24 bg-gradient-to-br from-[white] to-[#7FC41C]'>
 
         </div>
     );
