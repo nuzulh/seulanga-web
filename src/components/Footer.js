@@ -24,8 +24,8 @@ const Footer = () => {
     }, []);
 
     return (
-        <footer ref={el => footer = el} className='flex w-full px-24 py-6 font-[poppins]'>
-            <div ref={el => copy = el} className='flex flex-col basis-1/5 gap-2'>
+        <footer ref={el => footer = el} className='flex w-full px-2 md:px-24 py-6 font-[poppins] overflow-x-hidden'>
+            <div ref={el => copy = el} className='flex  flex-row md:flex-col md:basis-1/5 md:gap-2'>
                 <div className='flex flex-row items-center gap-2'>
                     <img className='w-8' src={logo} alt='logo' />
                     <h1 className='text-lg font-bold text-[#334C0F]'>Seulanga</h1>
@@ -35,7 +35,7 @@ const Footer = () => {
                     <p>Seulanga Community</p>
                 </div>
             </div>
-            <div className='flex flex-col basis-4/5 divide-y divide-[#959595]'>
+            <div className='hidden md:flex flex-col basis-4/5 divide-y divide-[#959595]'>
                 <div ref={el => contact = el} className='flex items-center justify-between pb-2'>
                     <div className='flex gap-16'>
                         <a rel="noreferrer" href='https://youtube.com' target='_blank' className='flex items-center gap-2 text-[#959595]'><i className='text-2xl text-[#334C0F] fa-brands fa-youtube'></i> Youtube Channel</a>

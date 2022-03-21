@@ -5,7 +5,7 @@ import Top from './components/Top';
 
 const App = () => {
   return (
-    <div className=''>
+    <div>
       <Header />
       <Top />
       <Outlet />
