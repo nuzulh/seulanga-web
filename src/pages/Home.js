@@ -124,14 +124,6 @@ const Home = () => {
         }});
     }, []);
 
-    const settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
-
     return (
         <div className='overflow-x-hidden'>
             <div className='flex h-screen px-2 md:px-24 bg-gradient-to-br from-[white] to-[#7FC41C] font-[poppins]'>
@@ -234,7 +226,7 @@ const Home = () => {
                 <h1 className='font-bold text-2xl text-center md:text-left md:text-5xl text-[#0A093D] tracking-wider'>Open Recruitment</h1>
                 <p className='text-[rgba(0,0,0,0.7)] text-md text-center md:text-lg md:text-left'>Ayo daftarkan diri kamu dalam keanggotaan seulanga dan dapatkan manfaatnya!</p>
                 <Countdown />
-                <a href='#' rel='noreferrer' className='bg-[#334C0F] w-fit py-3 px-8 rounded-xl text-[white] self-center md:self-start tracking-wider shadow-lg text-md md:text-lg opacity-[0.7] cursor-not-allowed'>Daftar Sekarang</a>
+                <a href='/' rel='noreferrer' className='bg-[#334C0F] w-fit py-3 px-8 rounded-xl text-[white] self-center md:self-start tracking-wider shadow-lg text-md md:text-lg opacity-[0.7] cursor-not-allowed'>Daftar Sekarang</a>
             </div>
         </div>
     );

@@ -53,11 +53,11 @@ const Header = () => {
                 <NavLink to='/events' className={({isActive}) => isActive ? 'border-b border-[black]' : 'hover:opacity-[0.7]'}>Events</NavLink>
             </div>
             <i className={active ? 'fa-solid fa-xmark p-3 text-xl md:hidden' : 'fa-solid fa-bars p-3 text-xl md:hidden'} onClick={activeToggler}></i>
-            <div ref={el => nav = el} className='md:hidden flex flex-col items-center justify-center ease-out duration-500 absolute -left-full top-0 bg-[#334C0F] text-[white] h-screen w-2/3'>
-                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(255,255,255,.5)] justify-center' to='/'>Home</NavLink>
-                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(255,255,255,.5)] justify-center' to='/about'>About</NavLink>
-                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(255,255,255,.5)] justify-center' to='/team'>Team</NavLink>
-                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(255,255,255,.5)] justify-center' to='/events'>Events</NavLink>
+            <div ref={el => nav = el} className='md:hidden flex flex-col items-center justify-center ease-out duration-500 absolute -left-full top-0 bg-[rgba(255,255,255,0.95)] text-[black] h-screen w-2/3'>
+                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' to='/'>Home</NavLink>
+                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' to='/about'>About</NavLink>
+                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' to='/team'>Team</NavLink>
+                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' to='/events'>Events</NavLink>
             </div>
         </header>
     );
