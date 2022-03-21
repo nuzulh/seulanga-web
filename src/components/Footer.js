@@ -25,12 +25,12 @@ const Footer = () => {
 
     return (
         <footer ref={el => footer = el} className='flex w-full px-2 md:px-24 py-6 font-[poppins] overflow-x-hidden'>
-            <div ref={el => copy = el} className='flex  flex-row md:flex-col md:basis-1/5 md:gap-2'>
+            <div ref={el => copy = el} className='flex w-full justify-center flex-row md:flex-col md:basis-1/5 gap-2'>
                 <div className='flex flex-row items-center gap-2'>
                     <img className='w-8' src={logo} alt='logo' />
                     <h1 className='text-lg font-bold text-[#334C0F]'>Seulanga</h1>
                 </div>
-                <div className='text-sm pl-10 text-[#959595]'>
+                <div className='text-sm md:pl-10 text-[#959595]'>
                     <p>Copyright &copy; 2022</p>
                     <p>Seulanga Community</p>
                 </div>

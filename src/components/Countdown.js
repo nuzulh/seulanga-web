@@ -38,19 +38,19 @@ const Countdown = () => {
 
     return (
         <div className='flex gap-2 md:gap-6'>
-            <div className='flex flex-col items-center py-2 justify-center basis-1/4 md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
+            <div className='flex flex-col items-center py-2 justify-center w-full md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
                 <h1 className='text-2xl md:text-6xl'>{timerDays}</h1>
                 <p className='text-[rgba(0,0,0,0.6)] text-sm'>Days</p>
             </div>
-            <div className='flex flex-col items-center py-2 justify-center basis-1/4 md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
+            <div className='flex flex-col items-center py-2 justify-center w-full md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
                 <h1 className='text-2xl md:text-6xl'>{timerHours}</h1>
                 <p className='text-[rgba(0,0,0,0.6)] text-sm'>Hours</p>
             </div>
-            <div className='flex flex-col items-center py-2 justify-center basis-1/4 md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
+            <div className='flex flex-col items-center py-2 justify-center w-full md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
                 <h1 className='text-2xl md:text-6xl'>{timerMins}</h1>
                 <p className='text-[rgba(0,0,0,0.6)] text-sm'>Minutes</p>
             </div>
-            <div className='flex flex-col items-center py-2 justify-center basis-1/4 md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
+            <div className='flex flex-col items-center py-2 justify-center w-full md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
                 <h1 className='text-2xl md:text-6xl'>{timerSecs}</h1>
                 <p className='text-[rgba(0,0,0,0.6)] text-sm'>Seconds</p>
             </div>
