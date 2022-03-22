@@ -1,7 +1,6 @@
 import logo from '../img/logo.png';
 import { useRef, useEffect, useState } from 'react';
 import gsap from 'gsap';
-import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     let header = useRef(null);
@@ -47,17 +46,17 @@ const Header = () => {
                 <h1 className='text-xl font-bold tracking-wide text-[#334C0F]'>Seulanga</h1>
             </div>
             <div className='hidden md:flex space-x-12'>
-                <NavLink to='/' className={({isActive}) => isActive ? 'border-b border-[black]' : 'hover:opacity-[0.7]'}>Home</NavLink>
-                <NavLink to='/about' className={({isActive}) => isActive ? 'border-b border-[black]' : 'hover:opacity-[0.7]'}>About</NavLink>
-                <NavLink to='/team' className={({isActive}) => isActive ? 'border-b border-[black]' : 'hover:opacity-[0.7]'}>Team</NavLink>
-                <NavLink to='/events' className={({isActive}) => isActive ? 'border-b border-[black]' : 'hover:opacity-[0.7]'}>Events</NavLink>
+                <a href='#home' className='hover:opacity-[0.7]'>Home</a>
+                <a href='#about' className='hover:opacity-[0.7]'>About</a>
+                <a href='#team' className='hover:opacity-[0.7]'>Team</a>
+                <a href='#events' className='hover:opacity-[0.7]'>Events</a>
             </div>
             <i className={active ? 'fa-solid fa-xmark p-3 text-xl md:hidden' : 'fa-solid fa-bars p-3 text-xl md:hidden'} onClick={activeToggler}></i>
             <div ref={el => nav = el} className='md:hidden flex flex-col items-center justify-center ease-out duration-500 absolute -left-full top-0 bg-[rgba(255,255,255,0.95)] text-[black] h-screen w-2/3'>
-                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' to='/'>Home</NavLink>
-                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' to='/about'>About</NavLink>
-                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' to='/team'>Team</NavLink>
-                <NavLink className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' to='/events'>Events</NavLink>
+                <a className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' href='#home'>Home</a>
+                <a className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' href='#about'>About</a>
+                <a className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' href='#team'>Team</a>
+                <a className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' href='#events'>Events</a>
             </div>
         </header>
     );

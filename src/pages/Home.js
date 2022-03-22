@@ -126,13 +126,13 @@ const Home = () => {
 
     return (
         <div className='overflow-x-hidden'>
-            <div className='flex h-screen px-2 md:px-24 bg-gradient-to-br from-[white] to-[#7FC41C] font-[poppins]'>
+            <div id='home' className='flex h-screen px-2 md:px-24 bg-gradient-to-br from-[white] to-[#7FC41C] font-[poppins]'>
                 <div className='flex flex-col gap-6 w-full items-center md:items-start md:basis-1/2 justify-center h-full'>
                     <h3 ref={el => h3 = el} className='rounded-md py-2 px-6 w-fit bg-[rgba(0,0,0,0.1)] text-[#334C0F]'>Seulanga Community</h3>
                     <h1 ref={el => h1 = el}  className='md:text-6xl md:text-left text-center text-2xl font-bold text-[#0A093D] tracking-wider'>Computer Engineering Community</h1>
                     <p ref={el => p = el}  className='text-[#656464] md:text-left text-center text-sm md:text-lg'>Sebuah komunitas mahasiswa yang menerapkan pembelajaran Project Based Learning (PBL) untuk menciptakan individu yang mampu menjawab tantangan publik</p>
                     <div className='flex gap-3'>
-                        <Link to='/about' ref={el => btn = el} className='hidden md:flex items-center bg-[#334C0F] w-fit py-2 px-8 rounded-xl text-[white] tracking-wider shadow-xl text-md'>Selengkapnya</Link>
+                        <a href='#about' ref={el => btn = el} className='hidden md:flex items-center bg-[#334C0F] w-fit py-2 px-8 rounded-xl text-[white] tracking-wider shadow-xl text-md'>Selengkapnya</a>
                         <a className='w-fit py-2 px-8 bg-[#334C0F] text-[white] md:bg-transparent rounded-xl md:text-[#334C0F] md:border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300' href='#registration'>Daftar</a>
                     </div>
                 </div>
@@ -142,7 +142,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='px-2 md:pl-24 w-full font-[poppins]'>
+            <div id='about' className='px-2 md:pl-24 w-full font-[poppins]'>
                 <div ref={el => appsEl = el} className='w-full flex py-12 md:py-48'>
                     <div className='flex flex-col md:flex-row text-center md:text-left md:basis-2/3 items-center gap-5'>
                         <img ref={el => appsIconEl = el} className='hidden md:block w-50' src={apps} alt='apps' />
@@ -207,7 +207,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='hidden px-2 md:px-24 md:flex flex-col items-center justify-center w-full h-screen bg-gradient-to-b from-[white] to-[#7FC41C] font-[poppins]'>
+            <div id='team' className='hidden px-2 md:px-24 md:flex flex-col items-center justify-center w-full h-screen bg-gradient-to-b from-[white] to-[#7FC41C] font-[poppins]'>
                 <h1 className='font-bold text-2xl md:text-4xl text-[#0A093D] tracking-wider'>Our Team</h1>
                 <div className='flex w-full basis-3/4 items-center justify-around'>
                     {teams.map((team, index) => {
