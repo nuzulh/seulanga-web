@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 import logo from "../img/logo.png";
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { NavLink } from "react-router-dom";
+=======
+import logo from '../img/logo.png';
+import { useRef, useEffect, useState } from 'react';
+import gsap from 'gsap';
+>>>>>>> 8e8c8ce336e30e2006c95f8192d4416e6247682b
 
 const Header = () => {
   let header = useRef(null);
@@ -44,6 +50,7 @@ const Header = () => {
     }
   };
 
+<<<<<<< HEAD
   return (
     <header
       ref={(el) => (header = el)}
@@ -128,6 +135,29 @@ const Header = () => {
       </div>
     </header>
   );
+=======
+    return (
+        <header ref={el => header = el} className='fixed z-50 w-full flex items-center justify-between px-2 xl:px-24 py-2 font-[poppins]'>
+            <div className='flex items-center gap-2'>
+                <img src={logo} className='w-8 sm:w-10' alt='' />
+                <h1 className='text-xl font-bold tracking-wide text-[#334C0F]'>Seulanga</h1>
+            </div>
+            <div className='hidden md:flex space-x-12'>
+                <a href='#home' className='hover:opacity-[0.7]'>Home</a>
+                <a href='#about' className='hover:opacity-[0.7]'>About</a>
+                <a href='#team' className='hover:opacity-[0.7]'>Team</a>
+                <a href='#events' className='hover:opacity-[0.7]'>Events</a>
+            </div>
+            <i className={active ? 'fa-solid fa-xmark p-3 text-xl md:hidden' : 'fa-solid fa-bars p-3 text-xl md:hidden'} onClick={activeToggler}></i>
+            <div ref={el => nav = el} className='md:hidden flex flex-col items-center justify-center ease-out duration-500 absolute -left-full top-0 bg-[rgba(255,255,255,0.95)] text-[black] h-screen w-2/3'>
+                <a className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' href='#home'>Home</a>
+                <a className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' href='#about'>About</a>
+                <a className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' href='#team'>Team</a>
+                <a className='w-full flex items-center py-4 border-b-[1px] border-[rgba(0,0,0,.2)] justify-center' href='#events'>Events</a>
+            </div>
+        </header>
+    );
+>>>>>>> 8e8c8ce336e30e2006c95f8192d4416e6247682b
 };
 
 export default Header;
