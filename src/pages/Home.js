@@ -226,7 +226,22 @@ const Home = () => {
                 <h1 className='font-bold text-2xl text-center md:text-left md:text-5xl text-[#0A093D] tracking-wider'>Open Recruitment</h1>
                 <p className='text-[rgba(0,0,0,0.7)] text-md text-center md:text-lg md:text-left'>Ayo daftarkan diri kamu dalam keanggotaan seulanga dan dapatkan manfaatnya!</p>
                 <Countdown />
-                <a href='/' rel='noreferrer' className='bg-[#334C0F] w-fit py-3 px-8 rounded-xl text-[white] self-center md:self-start tracking-wider shadow-lg text-md md:text-lg opacity-[0.7] cursor-not-allowed'>Daftar Sekarang</a>
+                <div className="flex flex-row gap-4 justify-center md:justify-start">
+          <a
+            href="https://forms.gle/v4mwe7gXXo8Ro2hM7"
+            rel="noreferrer"
+            className="w-fit py-2 px-8 bg-[#334C0F] text-[#334C0F] bg-transparent rounded-xl md:text-[#334C0F] border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300"
+          >
+            <i class="fa-solid fa-file-lines"></i> Daftar
+          </a>{" "}
+          <a
+            href="https://drive.google.com/drive/folders/1mIXJCJqggpl-IxMhrGRUFwAEcDse0-Ku"
+            rel="noreferrer"
+            className="w-fit py-2 px-8 bg-[#334C0F] text-[#334C0F] bg-transparent rounded-xl md:text-[#334C0F] border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i> Form
+          </a>
+        </div>
             </div>
         </div>
     );
