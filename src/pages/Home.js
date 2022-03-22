@@ -230,16 +230,18 @@ const Home = () => {
           <a
             href="https://forms.gle/v4mwe7gXXo8Ro2hM7"
             rel="noreferrer"
+            target='_blank'
             className="w-fit py-2 px-8 bg-[#334C0F] text-[#334C0F] bg-transparent rounded-xl md:text-[#334C0F] border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300"
           >
-            <i class="fa-solid fa-file-lines"></i> Daftar
+            <i className="fa-solid fa-file-lines"></i> Daftar
           </a>{" "}
           <a
             href="https://drive.google.com/drive/folders/1mIXJCJqggpl-IxMhrGRUFwAEcDse0-Ku"
             rel="noreferrer"
+            target='_blank'
             className="w-fit py-2 px-8 bg-[#334C0F] text-[#334C0F] bg-transparent rounded-xl md:text-[#334C0F] border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300"
           >
-            <i class="fa-solid fa-file-arrow-down"></i> Form
+            <i className="fa-solid fa-file-arrow-down"></i> Form
           </a>
         </div>
             </div>

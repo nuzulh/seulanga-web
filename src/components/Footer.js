@@ -106,9 +106,9 @@ const Footer = () => {
             </a>
           </div>
           <div>
-            <button className="rounded-lg py-2 px-4 bg-[#334C0F] text-white text-xs]">
+            <a href='https://api.whatsapp.com/send?phone=6285262820401' rel='noreferrer' target='_blank' className="rounded-lg py-2 px-4 bg-[#334C0F] text-white text-xs]">
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
         <div
