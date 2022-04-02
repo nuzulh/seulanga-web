@@ -9,7 +9,7 @@ const Countdown = () => {
     let interval = useRef();
 
     const startTimer = () => {
-        const cdDate = new Date('March 29, 2022 00:00:00').getTime();
+        const cdDate = new Date('April 03, 2022 23:59:00').getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
@@ -39,19 +39,19 @@ const Countdown = () => {
     return (
         <div className='flex gap-2 md:gap-6'>
             <div className='flex flex-col items-center py-2 justify-center w-full md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
-                <h1 className='text-2xl md:text-6xl'>{timerDays}</h1>
+                <h1 className='text-2xl md:text-6xl text-[red]'>{timerDays}</h1>
                 <p className='text-[rgba(0,0,0,0.6)] text-sm'>Days</p>
             </div>
             <div className='flex flex-col items-center py-2 justify-center w-full md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
-                <h1 className='text-2xl md:text-6xl'>{timerHours}</h1>
+                <h1 className='text-2xl md:text-6xl text-[red]'>{timerHours}</h1>
                 <p className='text-[rgba(0,0,0,0.6)] text-sm'>Hours</p>
             </div>
             <div className='flex flex-col items-center py-2 justify-center w-full md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
-                <h1 className='text-2xl md:text-6xl'>{timerMins}</h1>
+                <h1 className='text-2xl md:text-6xl text-[red]'>{timerMins}</h1>
                 <p className='text-[rgba(0,0,0,0.6)] text-sm'>Minutes</p>
             </div>
             <div className='flex flex-col items-center py-2 justify-center w-full md:w-36 md:h-36 bg-[white] rounded-xl shadow-xl'>
-                <h1 className='text-2xl md:text-6xl'>{timerSecs}</h1>
+                <h1 className='text-2xl md:text-6xl text-[red]'>{timerSecs}</h1>
                 <p className='text-[rgba(0,0,0,0.6)] text-sm'>Seconds</p>
             </div>
         </div>
