@@ -133,7 +133,7 @@ const Home = () => {
                     <p ref={el => p = el}  className='text-[#656464] md:text-left text-center text-sm md:text-lg'>Sebuah komunitas mahasiswa yang menerapkan pembelajaran Project Based Learning (PBL) untuk menciptakan individu yang mampu menjawab tantangan publik</p>
                     <div className='flex gap-3'>
                         <a href='#about' ref={el => btn = el} className='hidden md:flex items-center bg-[#334C0F] w-fit py-2 px-8 rounded-xl text-[white] tracking-wider shadow-xl text-md'>Selengkapnya</a>
-                        <a className='w-fit py-2 px-8 bg-[#334C0F] text-[white] md:bg-transparent rounded-xl md:text-[#334C0F] md:border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300' href='#assignment'>Pre-Test</a>
+                        <a className='w-fit py-2 px-8 bg-[#334C0F] text-[white] md:bg-transparent rounded-xl md:text-[#334C0F] md:border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300' href='#pengumuman'>Pengumuman Kelulusan</a>
                     </div>
                 </div>
                 <div className='hidden md:flex basis-1/2 items-center justify-center h-full'>
@@ -143,27 +143,6 @@ const Home = () => {
                 </div>
             </div>
             <div id='about' className='px-2 md:pl-24 w-full font-[poppins]'>
-                <div ref={el => appsEl = el} className='w-full flex py-12 md:py-48'>
-                    <div className='flex flex-col md:flex-row text-center md:text-left md:basis-2/3 items-center gap-5'>
-                        <img ref={el => appsIconEl = el} className='hidden md:block w-50' src={apps} alt='apps' />
-                        <img className='block md:hidden w-20' src={apps} alt='apps' />
-                        <div className='divide-y divide-[#656464] flex flex-col'>
-                            <h1 ref={el => appsH2 = el} className='font-bold pb-4 text-2xl md:text-4xl tracking-wider'>Web & Mobile Development</h1>
-                            <p ref={el => appsP = el} className='text-[#656464] pt-4'>Proses pengembangan web dan mobile mencakup UI/UX Design, Frontend, Backend, Content Writing, Client-side/Server-side Script dan Network Security Configuration</p>
-                        </div>
-                    </div>
-                    <div className='hidden md:flex flex-col basis-1/3 items-end justify-center gap-6'>
-                        <div ref={el => uiEl = el} className='w-5/6 shadow-lg font-bold text-2xl text-[white] px-8 py-4 rounded-l-full bg-gradient-to-r from-[#D7DB00] to-[white]'>
-                            <h2>UI/UX Design</h2>
-                        </div>
-                        <div ref={el => frontEl = el} className='w-5/6 shadow-lg font-bold text-2xl text-[white] px-8 py-4 rounded-l-full bg-gradient-to-r from-[#D7DB00] to-[white]'>
-                            <h2>Frontend Dev</h2>
-                        </div>
-                        <div ref={el => backEl = el} className='w-5/6 shadow-lg font-bold text-2xl text-[white] px-8 py-4 rounded-l-full bg-gradient-to-r from-[#D7DB00] to-[white]'>
-                            <h2>Backend Dev</h2>
-                        </div>
-                    </div>
-                </div>
                 <div ref={el => cyberEl = el} className='w-full flex py-12 md:py-48'>
                     <div className='flex flex-col md:flex-row text-center md:text-left md:basis-2/3 items-center gap-5'>
                         <img ref={el => cyberIconEl = el} className='hidden md:block w-50' src={cyber} alt='apps' />
@@ -182,6 +161,27 @@ const Home = () => {
                         </div>
                         <div ref={el => cyber3 = el} className='w-5/6 shadow-lg font-bold text-2xl text-[white] px-8 py-4 rounded-l-full bg-gradient-to-r from-[#A80000] to-[white]'>
                             <h2>Others.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div ref={el => appsEl = el} className='w-full flex py-12 md:py-48'>
+                    <div className='flex flex-col md:flex-row text-center md:text-left md:basis-2/3 items-center gap-5'>
+                        <img ref={el => appsIconEl = el} className='hidden md:block w-50' src={apps} alt='apps' />
+                        <img className='block md:hidden w-20' src={apps} alt='apps' />
+                        <div className='divide-y divide-[#656464] flex flex-col'>
+                            <h1 ref={el => appsH2 = el} className='font-bold pb-4 text-2xl md:text-4xl tracking-wider'>Web & Mobile Development</h1>
+                            <p ref={el => appsP = el} className='text-[#656464] pt-4'>Proses pengembangan web dan mobile mencakup UI/UX Design, Frontend, Backend, Content Writing, Client-side/Server-side Script dan Network Security Configuration</p>
+                        </div>
+                    </div>
+                    <div className='hidden md:flex flex-col basis-1/3 items-end justify-center gap-6'>
+                        <div ref={el => uiEl = el} className='w-5/6 shadow-lg font-bold text-2xl text-[white] px-8 py-4 rounded-l-full bg-gradient-to-r from-[#D7DB00] to-[white]'>
+                            <h2>UI/UX Design</h2>
+                        </div>
+                        <div ref={el => frontEl = el} className='w-5/6 shadow-lg font-bold text-2xl text-[white] px-8 py-4 rounded-l-full bg-gradient-to-r from-[#D7DB00] to-[white]'>
+                            <h2>Frontend Dev</h2>
+                        </div>
+                        <div ref={el => backEl = el} className='w-5/6 shadow-lg font-bold text-2xl text-[white] px-8 py-4 rounded-l-full bg-gradient-to-r from-[#D7DB00] to-[white]'>
+                            <h2>Backend Dev</h2>
                         </div>
                     </div>
                 </div>
@@ -222,28 +222,21 @@ const Home = () => {
                 </div>
                 <Link to='/team' title='Teams more'><i className='hidden md:block fa-solid fa-ellipsis text-8xl text-[#334C0F] hover:opacity-[0.7] duration-300'></i></Link>
             </div>
-            <div id='assignment' className='px-2 md:px-24 w-full flex flex-col justify-center gap-5 md:gap-10 h-screen bg-gradient-to-b from-[#7FC41C] to-[white] font-[poppins]'>
-                <h1 className='font-bold text-2xl text-center md:text-left md:text-5xl text-[#0A093D] tracking-wider'>Assignment Pre-Test</h1>
-                <p className='text-[rgba(0,0,0,0.7)] text-md text-center md:text-lg md:text-left'>Selesaikan Pre-Test dan kerjakan sesuai dengan instruksi pada link di bawah!</p>
-                <Countdown />
+            <div id='pengumuman' className='px-2 md:px-24 w-full flex flex-col justify-center gap-5 md:gap-10 h-screen bg-gradient-to-b from-[#7FC41C] to-[white] font-[poppins]'>
+                <h1 className='font-bold text-2xl text-center md:text-left md:text-5xl text-[#0A093D] tracking-wider'>Pengumuman Kelulusan Anggota Seulanga 2022</h1>
+                <p className='text-[rgba(0,0,0,0.7)] text-md text-center md:text-lg md:text-left'>Berikut adalah nama-nama peserta yang lulus menjadi anggota seulanga:</p>
                 <div className="flex flex-row gap-4 justify-center md:justify-start">
           <a
-            href="https://drive.google.com/drive/folders/1R1dn92cD4aY518PX2V3rtkXdx2UkLpZf?usp=sharing"
+            href="https://docs.google.com/spreadsheets/d/1DSdwjGZ9YPxjkT9oo6UEjTIpeH872SkE/edit?usp=sharing&ouid=115937540151185242741&rtpof=true&sd=true"
             rel="noreferrer"
             target='_blank'
             className="w-fit py-2 px-8 bg-[#334C0F] text-[#334C0F] bg-transparent rounded-xl md:text-[#334C0F] border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300"
           >
-            <i className="fa-solid fa-file-arrow-down"></i> Instruksi Pre-Test
+            <i className="fa-solid fa-file-lines"></i> Pengumuman
           </a>
-          <a
-            href="https://forms.gle/dQuVeAbQ2f5UsmwB6"
-            rel="noreferrer"
-            target='_blank'
-            className="w-fit py-2 px-8 bg-[#334C0F] text-[#334C0F] bg-transparent rounded-xl md:text-[#334C0F] border-2 border-[#334C0F] tracking-wider shadow-xl text-md hover:bg-[#334C0F] hover:text-[white] duration-300"
-          >
-            <i className="fa-solid fa-file-lines"></i> Kumpul Pre-Test
-          </a>{" "}
         </div>
+          
+          <p><strong>Note: </strong><br />Khusus Anggota yang lulus diluar bidang untuk dapat menghubungi CP 2 x 24 Jam setelah pengumuman untuk melakukan konfirmasi Lanjut/Tidak Lanjut</p>
             </div>
         </div>
     );
